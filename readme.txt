@@ -1,4 +1,4 @@
-=== WPBootstrap ===
+=== AWD WPBootstrap ===
 Contributors: Anarchy Web Dev
 Requires at least: WordPress 4.4
 Tested up to: WordPress 4.4
