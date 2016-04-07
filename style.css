@@ -1,0 +1,603 @@
+/*
+
+Theme Name: AWD WPBootstrap
+
+Theme URI: http://anarchywebdev.com
+
+Description: A basic theme built on Twitter Bootstrap. 
+It includes page templates for left and right (default) sidebars, and full-width.
+It has an option to add a header image, and a theme color chooser.
+
+Author: Anarchy Web Dev
+
+Author URI: http://anarchywebdev.com
+
+Version: 1.0
+
+Tags: dark, light, one-column, two-columns, right-sidebar, fixed-layout, responsive-layout, custom-background, custom-colors, custom-header, custom-menu, editor-style, featured-images, flexible-header, post-formats, sticky-post, threaded-comments
+
+License: Attribution-ShareAlike 3.0 Unported (CC BY-SA 3.0)
+
+License URI: http://creativecommons.org/licenses/by-sa/3.0/
+
+This simple theme was built using the Bootstrap theme 
+
+*/
+
+@font-face{ 
+    font-family: 'mrrobot Font';
+    src: url('fonts/mrrobot/mr_robot-webfont.eot');
+    src: url('fonts/mrrobot/mr_robot-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/mrrobot/mr_robot-webfont.woff') format('woff'),
+         url('fonts/mrrobot/mr_robot-webfont.ttf') format('truetype'),
+         url('fonts/mrrobot/mr_robot-webfont.svg#webfont') format('svg');
+}
+
+body { 
+    padding-top: 50px;
+}
+#header{
+    background-color: #333;
+}
+h2, h3, h4{
+    font-family: 'Oswald', sans-serif;
+    
+}
+/**** Styles for the header text ****/
+.site-branding{
+    text-align: center;
+}
+.site-branding h1, .site-branding .h1 {
+    font-family: "mrrobot Font";
+    color: #337AB7;
+    font-size: 4rem;
+}
+.site-branding h2, .site-branding .h2 {
+    font-size: 2rem;
+}
+.site-branding-text {
+    padding: 4% 0;
+}
+.site-branding-text a{
+    color: #eee;
+}
+.site-title a{
+    color: #337AB7;
+    text-decoration: none;
+}
+
+/**** Portfolio page header styles ****/
+.portfolio-header{
+    min-height: 20px;
+    padding: 19px;
+    margin-bottom: 20px;
+    border: 1px solid #e3e3e3;
+    border-radius: 4px;
+    color: #fff;
+    background-color: #337ab7;
+}
+.portfolio-header h2{
+    color: #000;
+}
+.portfolio-title{
+    text-align: center;
+    color: #000;
+}
+
+/**** Styles for the Jumbotron ****/
+.jumbotron {
+	position: relative;
+    width: 100%;
+    background-size: cover;
+    background-color: #333;
+    overflow: hidden;
+}
+.jumbotron h1, .jumbotron .h1 {
+    font-family: "mrrobot Font";
+    color: red;    
+}
+.jumbotron p {
+    color: #fff;
+}
+
+/***** Classes for the About page ****/
+.jumbotron-about {
+    position: relative;
+    background: url('../awd-wpbootstrap/images/berlincrop.png') bottom center;
+    width: 100%;
+    background-size: cover;
+    overflow: hidden;
+}
+
+/**** Classes for CV page *****/
+.logo-holder{
+    position: relative;
+    background: url('../awd-wpbootstrap/images/w3schols-logo.png') ;
+    height: 71px;
+    width: 320px;
+    margin-left: 5px;
+    background-size: cover;    
+}
+.navbar-dummy .active{
+    background-color: #4CAF50;
+    
+}
+.navbar-dummy{
+    background-color: #5F5F5F;
+    color: #fff;
+    border-radius: 0;
+    margin-bottom: 0;
+    margin-left: -15px;
+}
+.navbar-dummy .navbar-nav>li a:hover{
+    background-color: #000;    
+}
+.navbar-dummy a{
+    color: #fff;
+}
+#w3-sideNavbar{
+    margin: 0;
+    padding: 0;
+}
+#w3-sideNavbar li{
+    background-color: #eee;
+    height: 40px;
+    width: 250px;
+}
+#w3-sideNavbar a:hover{
+    background-color: #ddd;
+}
+#w3-sideNavbar a{
+    color: #000;
+}
+.tutintro {
+    width: auto;
+    min-height: 132px;
+    position: relative;
+}
+.tutintro img {
+    float: left;
+    margin-right: 20px;
+    margin-bottom: 10px;
+}
+
+/***** End classes for cv page*****/
+
+
+img.alignright{
+    float:right;
+    margin:0 0 1em 1em;
+}
+img.alignleft{
+    float:left;
+    margin:0 1em 1em 0;
+}
+img.aligncenter{
+    display: block;
+    margin-left: auto;
+    margin-right: auto
+}
+.spacer {
+    margin-top: 40px; /* define margin as you see fit */
+}
+
+.wp-caption{
+    background: #fff;
+    border: 1px solid #f0f0f0;
+    max-width: 96%; /* Image does not overflow the content area */
+    padding: 5px 3px 10px;
+    text-align: center;
+}
+.wp-caption-text{
+    font-size: 11px;
+    line-height: 17px;
+    margin: 0;
+    padding: 0 4px 5px;
+}
+.sticky{
+
+}
+.screen-reader-text{
+    clip: rect(1px, 1px, 1px, 1px);
+    position: absolute !important;
+    height: 1px;
+    width: 1px;
+    overflow: hidden;
+}
+.gallery-caption{
+
+}
+.bypostauthor{
+
+}
+
+/**** Styles for footer area and widgets ****/
+footer {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    color: #eee;
+    background-color: #333;
+    border-color: #252525;
+}
+/* 'comments area' footer*/
+.comment-meta{
+    color: #333;
+    background-color: #eee;
+    border-color: #252525;
+}
+.comment-content{
+    background-color: #fff;
+}
+
+/**** Footer Widget area ****/
+.sidebar-footer{
+    background: #2e6da4;
+    color: #eee;
+    padding: 3% 0;
+}
+.sidebar-footer .nav-pills>li>a {
+    background-color: #ccc;
+}
+.sidebar-footer .nav-pills>li>a:hover {
+    background-color: #eee;
+}
+.sidebar-footer h3{
+    color: #000;
+}
+
+/**** Tag Cloud widget ****/
+.tagcloud{
+    text-align: center;
+}
+.tagcloud a {
+    border: 1px solid #d1d1d1;
+    border-radius: 2px;
+    display: inline-block;
+    font-family: Montserrat, "Helvetica Neue", sans-serif;
+    line-height: 1;
+    margin: 0 0.1875em 0.4375em 0;
+    padding: 0.5625em 0.4375em 0.5em;
+    background-color: #ccc;
+}
+.tagcloud .label{
+    background-color: #ccc;
+    color: #2e6da4;
+}
+.tagcloud a:hover,
+.tagcloud a:focus {
+    border-color: #007acc;
+    color: #007acc;
+    outline: 0;
+}
+.nav-previous{
+    float: right;
+}
+.nav-previous .glyphicon{
+    float: right;
+    padding: 1%;
+}
+
+/********************************************
+STYLES FOR THE FRONT PAGE PORTFOLIO DISPLAY
+USING CAPTIONS
+*********************************************/
+.thumbnail {
+    max-width: 768px;
+    position: relative;
+    overflow: hidden;
+    display: block;
+    padding: 0px;
+    margin: 2% 0;
+    line-height: 1.42857143;
+    background-color: #fff;
+    border: 2px solid #555;
+    border-radius: 4px;
+    -webkit-transition: border .2s ease-in-out;
+    -o-transition: border .2s ease-in-out;
+    transition: border .2s ease-in-out;
+}
+#caption-half-up {
+    position: absolute;
+    top: 100% 
+    left:0;
+    /*margin-left: -4px;
+    margin-top: 4px;*/
+    border-top: ridge grey 1px;
+    width: 100%;
+    height: auto;
+    background-color: #22334d;
+    visibility: hidden;
+    opacity: 0;
+    -webkit-transition: all .5s ease-in-out;
+    -moz-transition: all .5s ease-in-out;
+    -ms-transition: all .5s ease-in-out;
+    -o-transition: all .5s ease-in-out;
+    transition: all .5s ease-in-out;
+    text-align: center;
+}
+#caption-half-down {
+    position: absolute;
+    padding-top: 3px;
+    color: #fff;
+    bottom: 100%;
+    left: 0;
+    width: 100%;
+    height: 50%;
+    background-color: #22334d;
+    visibility: hidden;
+    opacity: 0;
+    border-bottom: ridge grey 1px;
+    -webkit-transition: all .5s ease-in-out;
+    -moz-transition: all .5s ease-in-out;
+    -ms-transition: all .5s ease-in-out;
+    -o-transition: all .5s ease-in-out;
+    transition: all .5s ease-in-out;
+    text-align: center;
+}
+.thumbnail:hover #caption-half-up {
+    visibility: visible;
+    opacity: .9;
+    height: 50%;
+    -moz-transform: translateY(-100%);
+    -o-transform: translateY(-100%);
+    -webkit-transform: translateY(-100%);
+    transform: translateY(-100%);
+}
+.thumbnail:hover #caption-half-down {
+    visibility: visible;
+    opacity: .9;
+    -moz-transform: translateY(100%);
+    -o-transform: translateY(100%);
+    -webkit-transform: translateY(100%);
+    transform: translateY(100%);
+    height: 50%;
+}
+#caption-down {
+    position: absolute;
+    color: #fff;
+    bottom: 100%;
+    left: 0;
+    width: 100%;
+    height: auto;
+    background-color: #22334d;
+    visibility: hidden;
+    opacity: 0;
+    -webkit-transition: all .5s ease-in-out;
+    -moz-transition: all .5s ease-in-out;
+    -ms-transition: all .5s ease-in-out;
+    -o-transition: all .5s ease-in-out;
+    transition: all .5s ease-in-out;
+}
+.thumbnail:hover #caption-down {
+    visibility: visible;
+    opacity: .9;
+    -moz-transform: translateY(100%);
+    -o-transform: translateY(100%);
+    -webkit-transform: translateY(100%);
+    transform: translateY(100%);
+}
+#caption-up-1, #caption-up-2 {
+    position: absolute;
+    color: #fff;
+    top: 100% left:0;
+    width: 100%;
+    height: auto;
+    background-color: #22334d;
+    visibility: hidden;
+    opacity: 0;
+    /*margin-left: -4px;
+    margin-top: 4px;*/
+    -webkit-transition: all .5s ease-in-out;
+    -moz-transition: all .5s ease-in-out;
+    -ms-transition: all .5s ease-in-out;
+    -o-transition: all .5s ease-in-out;
+    transition: all .5s ease-in-out;
+}
+.thumbnail:hover #caption-up-1{
+    visibility: visible;
+    opacity: .9;
+    -moz-transform: translateY(-100%);
+    -o-transform: translateY(-100%);
+    -webkit-transform: translateY(-100%);
+    transform: translateY(-100%);
+}
+.thumbnail:hover #caption-up-2 {
+    visibility: visible;
+    opacity: .9;
+    -moz-transform: translateY(-100%);
+    -o-transform: translateY(-100%);
+    -webkit-transform: translateY(-100%);
+    transform: translateY(-100%);
+}
+.label {
+    font-size: 100%;
+}
+
+/*********************************
+END OF FRONT PAGE PORTFOLIO STYES
+*********************************/
+
+/************
+MEDIA QUERIES 
+*************/
+@media screen and (min-width: 420px){
+    
+}
+
+@media screen and (min-width: 550px){
+    
+}
+
+@media only screen and (min-width: 768px) {
+    .site-branding h1, .site-branding .h1 {
+        font-size: 5rem;
+    }
+    .site-branding h2, .site-branding .h2 {
+    font-size: 3rem;
+    }
+
+    #ball { 
+        z-index: 3;
+        width: 69px;
+        height: 72px;
+        position: absolute;
+        top: 0px;
+        left: 10%;
+        margin-left: -50px;
+        
+       background: url('../awd-wpbootstrap/images/logo-color.png') center;
+        -webkit-border-radius: 55px;
+        -moz-border-radius: 55px;
+        border-radius: 55px;
+        
+        -webkit-animation: bounce 2s 1 forwards;
+        -moz-animation: bounce 2s 1 forwards;
+        -ms-animation: bounce 2s 1 forwards;
+        animation: bounce 2s 1 forwards;
+    }
+
+    /* ease-in is slow to fast, when the ball drops */
+    /* ease-out is fast to slow, when the ball rebounds */
+
+    @-webkit-keyframes bounce {
+        0% {
+            top: 0;
+            -webkit-animation-timing-function: ease-in;
+        }
+        16% {
+            top: 165px;
+            -webkit-animation-timing-function: ease-out;
+        }
+        32% {
+            top: 50px;
+            -webkit-animation-timing-function: ease-in;
+        }
+        48% {
+            top: 165px;
+            -webkit-animation-timing-function: ease-out;
+        }
+        62% {
+            top: 100px;
+            -webkit-animation-timing-function: ease-in;
+        }
+        78% {
+            top: 165px;
+            -webkit-animation-timing-function: ease-out;
+        }
+        90% {
+            top: 150px;
+            -webkit-animation-timing-function: ease-in;
+        }
+        100% {
+            top: 165px;
+            -webkit-animation-timing-function: ease-out;
+        }
+    }
+
+    @-moz-keyframes bounce {
+        0% {
+            top: 0;
+            -moz-animation-timing-function: ease-in;
+        }
+        16% {
+            top: 165px;
+            -moz-animation-timing-function: ease-out;
+        }
+        32% {
+            top: 50px;
+            -moz-animation-timing-function: ease-in;
+        }
+        48% {
+            top: 165px;
+            -moz-animation-timing-function: ease-out;
+        }
+        62% {
+            top: 100px;
+            -moz-animation-timing-function: ease-in;
+        }
+        78% {
+            top: 165px;
+            -moz-animation-timing-function: ease-out;
+        }
+        90% {
+            top: 150px;
+            -moz-animation-timing-function: ease-in;
+        }
+        100% {
+            top: 165px;
+            -moz-animation-timing-function: ease-out;
+        }
+    }
+
+    @-ms-keyframes bounce {
+        0% {
+            top: 0;
+            -ms-animation-timing-function: ease-in;
+        }
+        16% {
+            top: 165px;
+            -ms-animation-timing-function: ease-out;
+        }
+        32% {
+            top: 50px;
+            -ms-animation-timing-function: ease-in;
+        }
+        48% {
+            top: 165px;
+            -ms-animation-timing-function: ease-out;
+        }
+        62% {
+            top: 100px;
+            -ms-animation-timing-function: ease-in;
+        }
+        78% {
+            top: 165px;
+            -ms-animation-timing-function: ease-out;
+        }
+        90% {
+            top: 150px;
+            -ms-animation-timing-function: ease-in;
+        }
+        100% {
+            top: 165px;
+            -ms-animation-timing-function: ease-out;
+        }
+    }
+
+    @keyframes bounce {
+        0% {
+            top: 0;
+            animation-timing-function: ease-in;
+        }
+        16% {
+            top: 165px;
+            animation-timing-function: ease-out;
+        }
+        32% {
+            top: 50px;
+            animation-timing-function: ease-in;
+        }
+        48% {
+            top: 165px;
+            animation-timing-function: ease-out;
+        }
+        62% {
+            top: 100px;
+            animation-timing-function: ease-in;
+        }
+        78% {
+            top: 165px;
+            animation-timing-function: ease-out;
+        }
+        90% {
+            top: 150px;
+            animation-timing-function: ease-in;
+        }
+        100% {
+            top: 165px;
+            animation-timing-function: ease-out;
+        }
+    }
+
+
+}
