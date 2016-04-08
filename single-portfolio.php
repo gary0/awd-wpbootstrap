@@ -25,6 +25,7 @@
 
 					<?php $custom = get_post_custom();?>
       					<div>
+      						<hr>
       						<p><strong>Year Completed </strong><?php echo $custom["year_completed"][0];?></p>
       					</div>
       					<div>
@@ -42,7 +43,7 @@
 					the_post_navigation( array(
 						'prev_text' => _x( '<span class="meta-nav">Published in</span><span class="post-title">%title</span>', 'Parent post link', 'awd_wpbootstrap' ),
 				) );
-				} elseif ( is_singular( 'post' ) ) {
+				} elseif ( is_singular( 'portfolio' ) ) {
 					// Previous/next post navigation.
 					the_post_navigation( array(
 						'next_text' => '<button type="button" class="btn btn-info">' . '<span class="glyphicon glyphicon-arrow-left"></span>' . '<span class="meta-nav" aria-hidden="true">' . __( ' Next:', 'awd_wpbootstrap' ) . '</span> ' .
