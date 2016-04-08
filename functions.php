@@ -321,7 +321,7 @@ add_filter( 'widget_tag_cloud_args', 'awd_wpbootstrap_widget_tag_cloud_args' );
  * @return int (Maybe) modified excerpt length.
  */
 function wpdocs_custom_excerpt_length( $length ) {
-    return 40;
+    return 50;
 }
 add_filter( 'excerpt_length', 'wpdocs_custom_excerpt_length', 999 );
 
