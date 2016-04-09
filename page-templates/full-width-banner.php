@@ -10,7 +10,7 @@
 <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
         
     <header id="header">
-              
+        <div id="ball"></div>      
         <div class="site-branding">
             <?php
             // Get custom header image and determine its size
@@ -48,18 +48,19 @@
             } //endif get_header_image()
             ?>
         </div><!-- .site-branding -->        
-    </header>  
+    </header>
 
-    <div id ="page-top" class="container">
+    <!-- if id=page-top is declared in content then that will be used instead -->
+    <div id ="page-top">
         <!-- this code removes the <p> element auto created after a 
         caption is used in the portfolio display -->
-        <?php remove_filter ('the_content',  'wpautop');?>        
-
-        <?php the_content(); ?>        
-        
-        <?php endwhile; else: ?>
-
-        <p><?php _e( 'Sorry, no posts matched your criteria.', 'awd_wpbootstrap' ); ?></p>
-        <?php endif; ?>
+        <?php remove_filter ('the_content',  'wpautop');?>
+        <?php the_content(); ?>
     </div>
+
+    <?php endwhile; else: ?>
+
+    <p><?php _e( 'Sorry, no posts matched your criteria.', 'awd_wpbootstrap' ); ?></p>
+    <?php endif; ?>
+    
     <?php get_footer(); ?>
