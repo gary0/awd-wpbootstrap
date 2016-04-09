@@ -279,7 +279,23 @@ footer {
     float: right;
     padding: 1%;
 }
-
+.home-portfolio{
+    padding: 0;
+}
+.home-portfolio-item{
+    border: 2px solid #000;
+    padding: 0 0 3% 0;
+    margin: 10px 0;
+    background-color: #337ab7;
+    border-radius: 4px;
+    color: #fff;
+}
+.home-portfolio-item .btn-info{
+    margin: 4% auto;
+}
+.modal-content{
+    color: #333;
+}
 /********************************************
 STYLES FOR THE FRONT PAGE PORTFOLIO DISPLAY
 USING CAPTIONS
@@ -290,10 +306,10 @@ USING CAPTIONS
     overflow: hidden;
     display: block;
     padding: 0px;
-    margin: 2% 0;
+    /* margin: 2% 0; */
     line-height: 1.42857143;
     background-color: #fff;
-    border: 2px solid #555;
+   /*  border: 2px solid #555; */
     border-radius: 4px;
     -webkit-transition: border .2s ease-in-out;
     -o-transition: border .2s ease-in-out;
