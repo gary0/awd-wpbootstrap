@@ -10,7 +10,7 @@
 <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
         
     <header id="header">
-        <div id="ball"></div>      
+           
         <div class="site-branding">
             <?php
             // Get custom header image and determine its size
@@ -48,6 +48,59 @@
             ?>
         </div><!-- .site-branding -->        
     </header>  
+
+    <!-- Top Carousel -->
+        <div class="">
+            <div id="myCarousel" class="carousel slide carousel-fade center-block" data-ride="carousel">
+                <!-- Indicators -->
+                <ol class="carousel-indicators"></ol><!-- Wrapper for slides -->
+                <div class="carousel-inner" role="listbox" >
+                    <div class="item active" style="background-color:#337ab7;">
+                        
+                        <div class="carousel-caption center-block" >
+                            <h3>
+                                Responsive Design
+                            </h3>
+                            <p>
+                                Mobile device technology and usage has grown enormously over the last few years, and it is important for your business to be accessible to as many potential clients as possible. One option may be to develop a mobile application...
+                            </p>
+                            <a href="#responsive" class="btn btn-default smoothscroll" role="button">Read More</a>
+                        </div>
+                    </div>
+                    <div class="item" style="background-color:#d9534f;">
+                        
+                        <div class="carousel-caption center-block" >
+                            <h3>
+                                Managing your content
+                            </h3>
+                            <p>
+                                WordPress allows you to manage, maintain and update your website yourself, or to easily manage other users, giving you complete control of your site. WordPress is also highly customizable, with a huge array of plugins and themes...
+                            </p><a href="#content" class="btn btn-default smoothscroll" role="button">Read More</a>
+                        </div>
+                    </div>
+                    <div class="item" style="background-color:#8a6d3b;">
+                        
+                        <div class="carousel-caption center-block" >
+                            <h3>
+                                HTML5 and CSS3
+                            </h3>
+                            <p>
+                                The latest HTML5 and CSS3 standards help ensure that your website is up to date and future-proof as possible. CSS3 is the latest standard for adding styles and animations to your website, and it allows styling content for all the different devices and screen sizes...
+                            </p><a href="#htmlcss" class="btn btn-default smoothscroll" role="button">Read More</a>
+                        </div>
+                    </div>
+                </div><!-- Left and right controls -->
+                 <!-- Left and right controls -->
+                 <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+                   <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                   <span class="sr-only">Previous</span>
+                 </a>
+                 <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+                   <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                   <span class="sr-only">Next</span>
+                 </a>
+            </div>              
+        </div>
 
     
     <!-- this code removes the <p> element auto created after a 
@@ -178,21 +231,21 @@
 
     <div class="container spacer">
         <div class="">			    
-		        <div class="row well">
+		        <div id="content" class="row well">
 			        <h4 style="text-align:center;" >Managing your content</h4>
 			        <img class="alignright size-full wp-image-497" src="http://anarchywebdev.com/wp-content/uploads/2013/10/cms-images.jpg" alt="cms images" width="288" height="129" />
 			        <p>As a web developer I have worked with various frameworks and content management systems (CMS), and found WordPress to be the most adaptable, and the easiest to learn. It allows you to manage, maintain and update your website yourself, or to easily manage other users, giving you complete control of your site.</p>
 			        <p>WordPress is also highly customizable, with a huge array of plugins and themes that can add features, and allow you to change the look and feel of your site quite easily.</p>
 
 		        </div>
-		        <div class="row well">
+		        <div id="responsive" class="row well">
 			        <h4 style="text-align:center;">Responsive Design</h4>
 			        <img class="alignleft size-medium wp-image-258" src="http://anarchywebdev.com/wp-content/uploads/2013/12/responsive-web-design1-300x128.png" alt="responsive web design graphic" width="300" height="128" />
 			        <p>Mobile device technology and usage has grown enormously over the last few years, and it is important for your business to be accessible to as many potential clients as possible. One option may be to develop a mobile application to allow mobile users to access your site. However this may be an unnecessary expense for many small to medium businesses.</p>
 			        <p>A responsive website will allow your potential clients to access your business more easily as they will be able access your content on any device.</p>
 		        </div>
 	        
-		        <div class="row well">
+		        <div id="htmlcss" class="row well">
 			        <h4 style="text-align:center;">HTML5 and CSS3</h4>
 			        <img class="alignright size-full wp-image-536" src="http://anarchywebdev.com/wp-content/uploads/2013/10/html_5_and_css_3.jpg" alt="html_5_and_css_3" width="150" height="79" />
 			        <p>I use the latest HTML5 and CSS3 standards to ensure that my websites are as up to date and future-proof as possible. CSS3 is the latest standard for adding styles and animations to your website, and it allows styling content for all the different devices and screen sizes.</p>

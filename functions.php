@@ -32,7 +32,7 @@ require_once('wp_bootstrap_navwalker.php');
  * AWD WPBootstrap only works in WordPress 4.4 or later.
  */
 if ( version_compare( $GLOBALS['wp_version'], '4.4-alpha', '<' ) ) {
-  require get_template_directory() . '/inc/back-compat.php';
+  require get_template_directory() . '/page-templates/back-compat.php';
 }
 
 if ( ! function_exists( 'awd_wpbootstrap_setup' ) ) :
@@ -48,14 +48,6 @@ if ( ! function_exists( 'awd_wpbootstrap_setup' ) ) :
  */
 
 function awd_wpbootstrap_setup() {
-  /*
-   * Make theme available for translation.
-   * Translations can be filed in the /languages/ directory.
-   * If you're building a theme based on AWD WPBootstrap, use a find and replace
-   * to change 'awd_wpbootstrap' to the name of your theme in all the template files
-   */
-  load_theme_textdomain( 'awd_wpbootstrap', get_template_directory() . '/languages' );
-
   // Add default posts and comments RSS feed links to head.
   add_theme_support( 'automatic-feed-links' );
 
