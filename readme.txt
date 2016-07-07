@@ -28,7 +28,7 @@ AWD-WPBootstrap is based on Twitter Bootstrap and the WordPress Twenty Sixteen t
 
 == Copyright ==
 
-AWD-WPBootstrap WordPress Theme, Copyright 2014-2015 WordPress.org
+AWD-WPBootstrap WordPress Theme, Copyright 2016 
 AWD-WPBootstrap is distributed under the terms of the GNU GPL
 
 This program is free software: you can redistribute it and/or modify
