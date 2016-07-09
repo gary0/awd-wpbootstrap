@@ -1,3 +1,4 @@
+This is a test message
 === AWD WPBootstrap ===
 Contributors: Anarchy Web Dev
 Requires at least: WordPress 4.4
